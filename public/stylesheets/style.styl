@@ -1,5 +1,5 @@
-@import "mixins/css3"
 @import "nib"
+@import "partials/grid"
 
 /* Variables
 -----------------------------------------------------------------------------*/
@@ -18,9 +18,14 @@ orange= #EB6841
 yellow= #EDC951
 
 //misc colors
-light-shadow= #222
+dark-shadow= #222
 med-shadow= #555
-dark-shadow= #AAA
+light-shadow= #AAA
+
+/* Configure our grid
+-----------------------------------------------------------------------------*/
+columns= 12
+total-width= 100%
 
 /* Reset
 Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
@@ -61,28 +66,24 @@ body
 -----------------------------------------------------------------------------*/
 @import "partials/typography"
 
-/* CSS Tables
------------------------------------------------------------------------------*/
-.css-table
+/* Basic layout stuff
+-----------------------------------------------------------------------------*/ 
+header
+  padding 50px 0px 0px 0px
+  border-bottom 1px #222 dashed
+  background #F6F6F6
+  h1
+    font 8em 'Lobster'
+    color #222
+  h2 
+    margin-top -5%
+    padding-left 10%
+    font extra-large 'Windsong'
+    
+.container
   width 100%
-  display table
-  .two-column
-    display table-row
-    .cell
-      display table-cell
-      vertical-align top
-      width 50%
-      *
-        width 90%
-  .three-column
-    display table-row
-    .cell
-      display table-cell
-      width 33.33333%
-      *
-        width 90%
-  .four-column
-    display table-row
-    .cell
-      display table-cell
-      width 25%
+  padding 10px
+   
+.large-column
+	column(3)
+	

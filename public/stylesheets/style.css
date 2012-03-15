@@ -1,3 +1,6 @@
+body{width:100%;*zoom:1;}
+body:before,body:after{content:"";display:table}
+body:after{clear:both}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
 article,aside,dialog,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif;text-align:center}
@@ -13,12 +16,8 @@ a{text-decoration:underline;color:#33c;outline:none}
 a:hover{text-decoration:none}
 code,samp,dfn,kbd,var,acronym,ins,del,abbr{speak:spell-out}
 acronym{speak:normal}
-.css-table{width:100%;display:table;}
-.css-table .two-column{display:table-row;}
-.css-table .two-column .cell{display:table-cell;vertical-align:top;width:50%;}
-.css-table .two-column .cell *{width:90%}
-.css-table .three-column{display:table-row;}
-.css-table .three-column .cell{display:table-cell;width:33.33333%;}
-.css-table .three-column .cell *{width:90%}
-.css-table .four-column{display:table-row;}
-.css-table .four-column .cell{display:table-cell;width:25%}
+header{padding:50px 0 0 0;border-bottom:1px #222 dashed;background:#f6f6f6;}
+header h1{font:8em 'Lobster';color:#222}
+header h2{margin-top:-5%;padding-left:10%;font:5em 'Windsong'}
+.container{width:100%;padding:10px}
+.large-column{display:inline;float:left;overflow:hidden;width:22.916666666666664%;margin:0 1.0416666666666665%;*width:22.916666666666664% -correction;*margin:0 1.0416666666666665% -correction}
