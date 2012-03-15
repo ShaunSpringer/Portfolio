@@ -1,11 +1,13 @@
 body{width:100%;*zoom:1;}
 body:before,body:after{content:"";display:table}
 body:after{clear:both}
+.ribbon{background-color:#a00;overflow:hidden;position:absolute;left:-7em;top:5.5em;-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-box-shadow:0 0 1em #888;-webkit-box-shadow:0 0 1em #888}
+.ribbon a{border:1px solid #faa;color:#fff;display:block;font:bold 2em 'Helvetiva Neue',Helvetica,Arial,sans-serif;margin:.05em 0 .075em 0;padding:.5em 3.5em;text-align:center;text-decoration:none;text-shadow:0 0 .5em #444}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
 article,aside,dialog,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif;text-align:center}
-h1{color:#666;font:4em 'Helvetica Neue';line-height:.9em;margin-bottom:.9em}
-h2{font-size:1.8em;line-height:1em;margin-bottom:1em}
+h1{color:#666;font:bold 4em 'Helvetica Neue';line-height:.9em;margin-bottom:.9em}
+h2{font:bold 1.8em 'Helvetica Neue';line-height:1em;margin-bottom:1em}
 h3{font-size:1.6em;line-height:1.13em;margin-bottom:1.13em}
 h4{font-size:1.4em;line-height:1.29em;margin-bottom:1.29em}
 h5{font-size:1.3em;line-height:1.38em;margin-bottom:1.38em}
@@ -18,6 +20,7 @@ code,samp,dfn,kbd,var,acronym,ins,del,abbr{speak:spell-out}
 acronym{speak:normal}
 header{padding:50px 0 0 0;border-bottom:1px #222 dashed;background:#f6f6f6;}
 header h1{font:8em 'Lobster';color:#222}
-header h2{margin-top:-5%;padding-left:10%;font:5em 'Windsong'}
-.container{width:100%;padding:10px}
-.large-column{display:inline;float:left;overflow:hidden;width:22.916666666666664%;margin:0 1.0416666666666665%;*width:22.916666666666664% -correction;*margin:0 1.0416666666666665% -correction}
+header h2{margin-top:-5%;padding-left:10%;font:5em 'Windsong';color:#888}
+.about{width:100%;padding:10px;}
+.about h2.header{font:bold}
+.about .column{display:inline;float:left;overflow:hidden;width:22.916666666666664%;margin:0 1.0416666666666665%;*width:22.916666666666664% -correction;*margin:0 1.0416666666666665% -correction}
