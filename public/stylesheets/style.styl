@@ -1,3 +1,4 @@
+@import "mixins/css3"
 @import "nib"
 @import "partials/grid"
 @import "partials/ribbon"
@@ -75,17 +76,42 @@ header
   background #F6F6F6
   h1
     font 8em 'Lobster'
-    color #222
+    color #222    
+    padding-left -10%
   h2 
     margin-top -5%
     padding-left 10%
     font extra-large 'Windsong'
     color #888
-    
-.about
+  ul
+    display block
+    text-align right
+    li      
+      display inline
+      margin 0 auto
+      padding 10px 20px			    
+      a
+        font-size large
+        font-weight bold
+        color red
+        text-decoration none
+        text-shadow .10em .01em .05em light-shadow;        
+
+
+/* About Section
+-----------------------------------------------------------------------------*/ 
+#about
   width 100%
-  padding 10px
-  h2.header
-    font bold
-  .column
-	  column(3)	
+  .title
+    column(3)
+    padding 0
+    margin 0
+    h1
+      transform rotate(-90deg)
+      font-size 12em
+      font-family "Lobster"
+      text-align left
+      text-shadow 0 0 0.05em #444
+  .content
+    .column
+      column(3)
