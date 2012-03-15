@@ -1,4 +1,26 @@
 @import "mixins/css3"
+@import "nib"
+
+/* Variables
+-----------------------------------------------------------------------------*/
+//font sizes
+extra-small= 0.5em
+small= 0.75em
+medium= 1.0em
+large= 1.4em
+extra-large= 5.0em
+
+//color palette - http://www.colourlovers.com/palette/1473/Ocean_Five
+teal= #00A0B0
+brown= #6A4A3C
+red= #CC333F
+orange= #EB6841
+yellow= #EDC951
+
+//misc colors
+light-shadow= #222
+med-shadow= #555
+dark-shadow= #AAA
 
 /* Reset
 Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
@@ -34,16 +56,6 @@ nav, section
 body
   font 62.5%/1.5  Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif
   text-align center
-  background #000
-
-#wrapper
-  width 920px
-  text-align left 
-  margin-left auto 
-  margin-right auto
-  background #fff
-  padding 20px
-  border-bottom-radius(15px)
 
 /* Typography
 -----------------------------------------------------------------------------*/
@@ -74,43 +86,3 @@ body
     .cell
       display table-cell
       width 25%
-
-/* Header
------------------------------------------------------------------------------*/
-header
-  background #F00060
-  nav 
-    width 960px
-    text-align right
-    margin-left auto 
-    margin-right auto
-    ul 
-      list-style none
-      padding 10px
-      margin-bottom 0
-      li 
-        display inline
-        margin-left 1%
-        a 
-          background #fc9200 
-          border-radius(15px)
-          display inline-block
-          padding 5px 15px 6px 
-          color #fff
-          text-decoration none
-          position relative
-          cursor pointer
-          &:hover
-            background-color #db0d5f 
-
-/* Footer
------------------------------------------------------------------------------*/
-footer
-  color #666
-  border-top 1px solid #ccc
-  padding-top 1.5em
-  ul 
-    list-style none
-
-
-

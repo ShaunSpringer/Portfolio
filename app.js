@@ -3,9 +3,10 @@
  * Module dependencies.
  */
 
-var express = require('express');
-
+var express = require('express'); 
 var app = module.exports = express.createServer();
+var stylus = require('stylus');
+var nib = require('nib');
 
 // Configuration
 
@@ -14,7 +15,10 @@ app.configure(function(){
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(require('stylus').middleware({ src: __dirname + '/public' }));
+	app.use(stylus.middleware({
+      src: __dirname + '/public',
+      compile: compile
+   }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
 });
@@ -31,7 +35,7 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Home'
+    title: 'Shaun Springer // Portfolio'
   });
 });
 
@@ -43,7 +47,7 @@ app.get('/about', function(req, res){
 
 app.get('/contact', function(req, res){
   res.render('contact', {
-    title: 'Contact'
+    title: 'Contact' 
   });
 });
 
@@ -52,4 +56,14 @@ app.get('/contact', function(req, res){
 if (!module.parent) {
   app.listen(9451);
   console.log("Express server listening on port %d", app.address().port);
+}
+
+ /**
+  * Handles the compliation of our css through nib
+  */ 
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(nib());
 }
