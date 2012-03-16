@@ -39,18 +39,6 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/about', function(req, res){
-  res.render('about', {
-    title: 'About'
-  });
-});
-
-app.get('/contact', function(req, res){
-  res.render('contact', {
-    title: 'Contact' 
-  });
-});
-
 // Only listen on $ node app.js
 
 if (!module.parent) {

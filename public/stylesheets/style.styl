@@ -23,6 +23,7 @@ yellow= #EDC951
 dark-shadow= #222
 med-shadow= #555
 light-shadow= #AAA
+dark-red= #800000
 
 /* Configure our grid
 -----------------------------------------------------------------------------*/
@@ -77,44 +78,57 @@ header
   h1
     font 8em 'Lobster'
     color #222    
-    padding-left -10%
   h2 
-    margin-top -5%
-    padding-left 10%
+    margin-top -1.80em
+    padding-left 1.25em
     font extra-large 'Windsong'
     color #888
-  ul
-    display block
+  navigation
     text-align center
-    li      
-      display inline
-      margin 0 auto
-      padding 10px 20px			    
-      a
-        font-size large
-        font-weight bold
-        color red
-        text-decoration none
-        text-shadow .10em .01em .05em light-shadow;  
-              
+    display inline
+    margin 0 auto
+    padding .25em 1.0em
+    a
+      font 2.5em "Helvetica Neue"
+      font-weight bold
+      position relative
+      top 0em
+      color dark-red
+      text-decoration none
+      text-shadow 0em .10em .05em light-shadow
+      transition-property color, text-shadow, top
+      transition-duration 0.3s
+      transition-timing-function linear, ease-out
+      &:hover
+        top -0.125em
+        color lighten(@color, 10%)
+        text-shadow 0px 0.35em 0.25em light-shadow
+        transition-property color, text-shadow, top
+        transition-duration 0.3s
+        transition-timing-function linear, ease-out
+
 /* Generic Section Stuff
 -----------------------------------------------------------------------------*/ 
 .container
   width 100%
 
-
 /* About Section
 -----------------------------------------------------------------------------*/ 
-#about
-  .title
-    column(3)
-    padding 0
-    margin 0
-    h1
-      font-size 12em
-      font-family "Lobster"
-      text-align center
-      text-shadow 0 0 0.05em #444
-  .content
-    .column
+section#about
+  padding-top 3em
+  content
+    column
       column(3)
+      transition-property color, text-shadow
+      transition-duration 0.3s
+      transition-timing-function linear, ease-out
+
+/* Blurry Text
+-----------------------------------------------------------------------------*/ 
+.blurry-text
+  color rgba(255, 255, 255, 0)
+  text-shadow 0 0 1em black
+  transition-property color, text-shadow
+  transition-duration 0.3s
+  transition-timing-function linear, ease-out
+  
