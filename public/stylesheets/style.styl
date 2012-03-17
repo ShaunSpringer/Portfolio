@@ -23,7 +23,7 @@ yellow= #EDC951
 dark-shadow= #222
 med-shadow= #555
 light-shadow= #AAA
-dark-red= #800000
+dark-red= #A00
 
 /* Configure our grid
 -----------------------------------------------------------------------------*/
@@ -71,42 +71,44 @@ body
 
 /* Basic layout stuff
 -----------------------------------------------------------------------------*/ 
-header
+body > header
   padding 50px 0px 0px 0px
   border-bottom 1px #222 dashed
   background #F6F6F6
+  position absolute
+  width 100%
   h1
     font 8em 'Lobster'
     color #222    
+    text-shadow: #000 0.010em 0.020em 0.030em;
+    -webkit-mask-image -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.55)), to(rgba(0,0,0,1)))
   h2 
     margin-top -1.80em
     padding-left 1.25em
     font extra-large 'Windsong'
     color #888
+    text-shadow: white 0.010em 0.020em 0.010em;
   navigation
-    text-align center
     display inline
-    margin 0 auto
-    padding .25em 1.0em
-    a
-      font 2.5em "Helvetica Neue"
-      font-weight bold
-      position relative
-      top 0em
-      color dark-red
-      text-decoration none
-      text-shadow 0em .10em .05em light-shadow
+    padding 0 2.0em
+    position relative
+    top -1em
+    font 2.5em "Helvetica Neue"
+    cursor pointer
+    color dark-red
+    text-decoration none
+    text-shadow 0em .10em .05em light-shadow
+    transition-property color, text-shadow, top
+    transition-duration 0.3s
+    transition-timing-function ease-out
+    &:hover
+      top -1.1em
+      color lighten(@color, 10%)
+      text-shadow 0px 0.35em 0.25em light-shadow
       transition-property color, text-shadow, top
       transition-duration 0.3s
-      transition-timing-function linear, ease-out
-      &:hover
-        top -0.125em
-        color lighten(@color, 10%)
-        text-shadow 0px 0.35em 0.25em light-shadow
-        transition-property color, text-shadow, top
-        transition-duration 0.3s
-        transition-timing-function linear, ease-out
-
+      transition-timing-function ease-out
+	   
 /* Generic Section Stuff
 -----------------------------------------------------------------------------*/ 
 .container
@@ -115,7 +117,10 @@ header
 /* Sections
 -----------------------------------------------------------------------------*/ 
 section
-  padding 3em 0em
+  padding 3em 0em 
+  header
+    h1
+      font-family "Lobster"
   content
     column
       column(3)
