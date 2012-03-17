@@ -76,20 +76,20 @@ body > header
   border-bottom 1px #222 dashed
   background #F6F6F6
   position absolute
-  width 100%
+  width 100%	
+  box-shadow 0em .25em .05em rgba(0, 0, 0, 0.15)
   h1
     font 8em 'Lobster'
     color #222    
-    text-shadow: #000 0.010em 0.020em 0.030em;
+    text-shadow #000 0.010em 0.020em 0.030em
     -webkit-mask-image -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.55)), to(rgba(0,0,0,1)))
   h2 
     margin-top -1.80em
     padding-left 1.25em
     font extra-large 'Windsong'
     color #888
-    text-shadow: white 0.010em 0.020em 0.010em;
+    text-shadow white 0.010em 0.020em 0.010em
   navigation
-    display inline
     padding 0 2.0em
     position relative
     top -1em    
@@ -99,7 +99,7 @@ body > header
     cursor pointer
     color dark-red
     text-decoration none
-    text-shadow 0em .10em .05em light-shadow
+    text-shadow 0em .05em .05em light-shadow
     transition-property color, text-shadow, top
     transition-duration 0.3s
     transition-timing-function ease-out

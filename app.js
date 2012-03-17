@@ -42,13 +42,6 @@ app.get('/', function(req, res){
   });
 });
 
-//handle about inquiries
-app.get('/about', function(req, res){
-  res.render('about', {
-    title: 'Shaun Springer // About'
-  });
-});
-
 // Events
 
 function initSocket(){
@@ -57,7 +50,6 @@ function initSocket(){
 		console.log('Received socket.io connection');
 		
 		socket.on('navigate', function(id){
-			console.log("Navigate Event: " + id);
 		});
 	});
 }
