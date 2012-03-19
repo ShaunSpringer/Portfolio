@@ -1,70 +1,66 @@
-
 /**
  * Module dependencies.
- */
-
+ */  
 var express = require('express'); 
 var stylus = require('stylus');
 var nib = require('nib');
 var io = require('socket.io');
-var socketio = null;
-var nodeQuery = require('nodeQuery');
-var dnode = require('dnode')();
-var expressServer = express.createServer();
+var socketio = null; 
+var app = express.createServer();
+var blog = require("./app/blog-db.js").BlogDB, blog = new blog();
 
-// Configuration
-
-expressServer.configure(function(){
-  expressServer.set('views', __dirname + '/views');
-  expressServer.set('view engine', 'jade');
-  expressServer.use(express.bodyParser());
-  expressServer.use(express.methodOverride());
-	expressServer.use(stylus.middleware({
+// Configuration 
+ 
+app.configure(function(){
+  app.set('views', __dirname + '/views');
+  app.set('view engine', 'jade');
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+	app.use(stylus.middleware({
       src: __dirname + '/public',
       compile: compile
    }));
-  expressServer.use(nodeQuery.middleware);
-  expressServer.use(expressServer.router);
-  expressServer.use(express.static(__dirname + '/public'));
+  app.use(app.router);
+  app.use(express.static(__dirname + '/public'));
 });
 
-expressServer.configure('development', function(){
-  expressServer.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+app.configure('development', function(){
+  app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
 });
 
-expressServer.configure('production', function(){
-  expressServer.use(express.errorHandler()); 
+app.configure('production', function(){
+  app.use(express.errorHandler()); 
 });
 
-// Routes
+// Only listen on $ node app.js
+var hasParent = module.parent;
+if (!hasParent) {
+  app.listen(80);
+  console.log("Express server listening on port %d", app.address().port); 
+}
 
-//get our base url
-expressServer.get('/', function(req, res){
-  res.render('index', {
+/**
+ *  Routes
+ */
+
+//route our index
+app.get('/', function(req, res){
+	res.render('index', {
     title: 'Shaun Springer // Portfolio'
   });
 });
 
-// More Configuration
+//route our about section
+app.get('/blog/', function(req, res){
+  blog.getAll(function(posts){
+  	res.render('partials/blog', {
+  		title: 'Shaun Springer // Portfolio',
+  		layout: !hasParent,
+  		posts: posts
+  	});
+  });
+});
 
-//wait for dom ready from the main app
-var app = function ($) {
-  $.on('ready', function () {
-    $('body').append('Hello World')
-  })
-}
-
-//setup nQuery
-nodeQuery.use(app);
-
-//setup dnode
-dnode.use(nodeQuery.middleware).listen(expressServer);
-
-// Only listen on $ node app.js
-if (!module.parent) {
-  expressServer.listen(80);
-  console.log("Express server listening on port %d", expressServer.address().port); 
-}
 
  /**
   * Handles the compliation of our css through nib
