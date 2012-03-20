@@ -7,10 +7,8 @@ var nib = require('nib');
 var io = require('socket.io');
 var socketio = null; 
 var app = express.createServer();
-var blog = require("./app/blog-db.js").BlogDB, blog = new blog();
 
-// Configuration 
- 
+// Configuration  
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -51,14 +49,17 @@ app.get('/', function(req, res){
 });
 
 //route our about section
-app.get('/blog/', function(req, res){
-  blog.getAll(function(posts){
-  	res.render('partials/blog', {
-  		title: 'Shaun Springer // Portfolio',
-  		layout: !hasParent,
-  		posts: posts
-  	});
-  });
+app.get('/about/', function(req, res){
+	res.render('partials/about', {
+		title: 'Shaun Springer // About Me'
+	});
+});
+
+//route our resume section
+app.get('/resume/', function(req, res){
+	res.render('partials/resume', {
+		title: 'Shaun Springer // My Resume'
+	});
 });
 
 

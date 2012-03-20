@@ -18,14 +18,10 @@ a{text-decoration:underline;color:#33c;outline:none}
 a:hover{text-decoration:none}
 code,samp,dfn,kbd,var,acronym,ins,del,abbr{speak:spell-out}
 acronym{speak:normal}
-body > header{padding:50px 0 0 0;border-bottom:.5em #aaa solid;background:#f6f6f6;position:absolute;width:100%;-webkit-box-shadow:0 .25em .05em rgba(0,0,0,0.15);-moz-box-shadow:0 .25em .05em rgba(0,0,0,0.15);box-shadow:0 .25em .05em rgba(0,0,0,0.15);border-bottom-right-radius:20%;border-bottom-left-radius:20%;}
+body > header{padding:50px 0 0 0;border-bottom:.5em #aaa solid;background:#f6f6f6;position:absolute;width:100%;z-index:999;-webkit-box-shadow:0 .25em .05em rgba(0,0,0,0.15);-moz-box-shadow:0 .25em .05em rgba(0,0,0,0.15);box-shadow:0 .25em .05em rgba(0,0,0,0.15);border-bottom-right-radius:20%;border-bottom-left-radius:20%;}
 body > header h1{font:8em 'Lobster';color:#222;text-shadow:#000 .01em .02em .03em;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.55)),to(#000))}
 body > header h2{margin-top:-1.8em;padding-left:1.25em;font:5em 'Windsong';color:#888;text-shadow:#fff .01em .02em .01em}
 body > header navigation{padding:0 2em;position:relative;top:-1em;font:2.5em "Helvetica Neue";-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.55)),to(#000));font-weight:bold;cursor:pointer;color:#a00;text-decoration:none;text-shadow:0 .05em .05em #aaa;-webkit-transition-property:color,text-shadow,top;-moz-transition-property:color,text-shadow,top;transition-property:color,text-shadow,top;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;transition-timing-function:ease-out;}
 body > header navigation:hover{top:-1.1em;color:#c50000;text-shadow:0 .35em .25em #aaa;-webkit-transition-property:color,text-shadow,top;-moz-transition-property:color,text-shadow,top;transition-property:color,text-shadow,top;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;transition-timing-function:ease-out}
-sectionwrapper{position:relative;display:block;top:30em}
 .container{width:100%}
-section{padding:3em 0;}
-section header h1{font-family:"Lobster"}
-section content column{display:inline;float:left;overflow:hidden;width:22.916666666666664%;margin:0 1.0416666666666665%;*width:22.916666666666664% -correction;*margin:0 1.0416666666666665% -correction;-webkit-transition-property:color,text-shadow;-moz-transition-property:color,text-shadow;transition-property:color,text-shadow;-webkit-transition-duration:.4s;-moz-transition-duration:.4s;transition-duration:.4s;-webkit-transition-timing-function:linear,ease-out;-moz-transition-timing-function:linear,ease-out;transition-timing-function:linear,ease-out}
-.blurry-text{color:rgba(255,255,255,0.00);text-shadow:0 0 1em #000;-webkit-transition-property:color,text-shadow;-moz-transition-property:color,text-shadow;transition-property:color,text-shadow;-webkit-transition-duration:.4s;-moz-transition-duration:.4s;transition-duration:.4s;-webkit-transition-timing-function:linear,ease-out;-moz-transition-timing-function:linear,ease-out;transition-timing-function:linear,ease-out}
+#map_canvas{width:100%;height:100%}

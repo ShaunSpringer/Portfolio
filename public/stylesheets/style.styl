@@ -77,6 +77,7 @@ body > header
   background #F6F6F6
   position absolute
   width 100%	
+  z-index 999
   box-shadow 0em .25em .05em rgba(0, 0, 0, 0.15)
   border-bottom-right-radius 20%
   border-bottom-left-radius 20%
@@ -112,11 +113,7 @@ body > header
       transition-property color, text-shadow, top
       transition-duration 0.3s
       transition-timing-function ease-out
-
-sectionwrapper
-  position relative
-  display block
-  top 30em
+  
 /* Generic Section Stuff
 -----------------------------------------------------------------------------*/ 
 .container
@@ -124,24 +121,6 @@ sectionwrapper
 
 /* Sections
 -----------------------------------------------------------------------------*/ 
-section
-  padding 3em 0em 
-  header
-    h1
-      font-family "Lobster"
-  content
-    column
-      column(3)
-      transition-property color, text-shadow
-      transition-duration 0.4s
-      transition-timing-function linear, ease-out
-
-/* Blurry Text
------------------------------------------------------------------------------*/ 
-.blurry-text
-  color rgba(255, 255, 255, 0)
-  text-shadow 0 0 1em black
-  transition-property color, text-shadow
-  transition-duration 0.4s
-  transition-timing-function linear, ease-out
-  
+#map_canvas
+  width 100%
+  height 100%
