@@ -70,11 +70,11 @@ div#scene-4 span.act-2.action{-webkit-animation:smallToBig 750ms alternate infin
 div#scene-4 span.act-2.cut{font-size:2750px;top:-1500px;left:-500px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all 1.25s ease;-moz-transition:all 1.25s ease;transition:all 1.25s ease;-webkit-animation:none;-moz-animation:none;animation:none}
 div#scene-4 span.act-3{left:25px}
 div#scene-4 span.act-4{left:450px}
-div#scene-4 span.act-5{left:425px}
-div#scene-4 span.act-6{left:350px}
-div#scene-4 span.act-7{left:525px}
+div#scene-4 span.act-5{left:450px}
+div#scene-4 span.act-6{left:375px}
+div#scene-4 span.act-7{left:550px}
 div#scene-4 span.act-8{left:525px}
-div#scene-4 span.act-9{left:375px}
+div#scene-4 span.act-9{left:400px}
 div#scene-4 span.act-3,div#scene-4 span.act-4,div#scene-4 span.act-5,div#scene-4 span.act-6,div#scene-4 span.act-7,div#scene-4 span.act-8,div#scene-4 span.act-9{font-size:300px;top:3500px;}
 div#scene-4 span.act-3.action,div#scene-4 span.act-4.action,div#scene-4 span.act-5.action,div#scene-4 span.act-6.action,div#scene-4 span.act-7.action,div#scene-4 span.act-8.action,div#scene-4 span.act-9.action{top:300px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 div#scene-4 span.act-3.cut,div#scene-4 span.act-4.cut,div#scene-4 span.act-5.cut,div#scene-4 span.act-6.cut,div#scene-4 span.act-7.cut,div#scene-4 span.act-8.cut,div#scene-4 span.act-9.cut{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all .75s ease .5s;-moz-transition:all .75s ease .5s;transition:all .75s ease .5s}

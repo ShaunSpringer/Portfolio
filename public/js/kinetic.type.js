@@ -71,6 +71,7 @@ $(window).ready(function(){
 	direct('#scene-4 > .act-9', 'cut', 18500);
 	direct('#scene-4 > .act-1', 'cut', 19250);
 	direct('#scene-4 > .act-2', 'cut', 19250);
+	direct('#scene-4', 'cut', 20500);
 });
 
 function direct(what, type, delay)
