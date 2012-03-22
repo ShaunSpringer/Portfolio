@@ -25,6 +25,18 @@ $(window).ready(function(){
 	direct('#scene-2 > .act-3', 'cut', 7250);
 	direct('#scene-2 > .act-7', 'action', 7250);
 	direct('#scene-2', 'cut', 8250);
+	
+	//scene 3	
+	direct('#scene-3', 'action', 8500);
+	direct('#scene-3 > .act-1', 'action-1', 8500);
+	direct('#scene-3 > .act-2', 'action-1', 8500);
+	direct('#scene-3 > .act-4', 'action-1', 8500);
+	direct('#scene-3 > .act-3', 'action', 9000);
+	direct('#scene-3 > .act-1', 'action-2', 9000);
+	direct('#scene-3 > .act-2', 'action-2', 9000);
+	direct('#scene-3 > .act-4', 'action-2', 9000);
+	direct('#scene-3 > .act-5', 'action', 9250);
+	direct('#scene-3 > .act-6', 'action', 9500);
 });
 
 function direct(what, type, delay)

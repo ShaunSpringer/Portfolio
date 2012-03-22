@@ -1,0 +1,74 @@
+div#scene-3
+  padding 0
+  margin 0
+  opacity 0
+  
+  span  
+    position absolute
+    display block
+   
+  &.action
+    opacity 1    
+  &.cut    
+    opacity 0
+    transition all 0.5s ease-in
+          
+  span.act-1
+    left -1000px
+    font-size 150px
+    &.action-1
+      left 350px
+      transition all 0.5s ease-out
+    &.action-2
+      left 250px
+      transition all 0.5s ease-out
+      
+  span.act-2
+    left -1000px
+    font-size 150px
+    &.action-1
+      left 425px
+      transition all 0.5s ease-out
+    &.action-2
+      left 325px
+      transition all 0.5s ease-out
+    
+  span.act-3
+    font-size 150px
+    left 700px
+    opacity 0
+    &.action
+      opacity 1
+      transition all 0.5s ease-out
+  
+  span.act-4
+    left 10000px
+    font-size 150px
+    &.action-1
+      left 825px
+      transition all 0.5s ease-out
+    &.action-2
+      left 1025px
+      transition all 0.5s ease-out
+    
+  span.act-5
+    left 600px
+    top 200px
+    font-size 150px
+    opacity 0
+    &.action
+      opacity 1
+      transition all 0.5s ease-out     
+      
+  span.act-6
+    left 380px
+    top 350px
+    font-size 250px
+    color transparent
+    text-shadow 0 0 20px rgba(0,0,0,0.5)
+    opacity 0
+    &.action
+      opacity 1
+      color black
+      text-shadow 0 0 0 black
+      transition all 1.0s ease-in

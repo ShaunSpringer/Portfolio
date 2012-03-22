@@ -5,6 +5,7 @@
 @import "kinetic-type/kinetic-type"
 @import "kinetic-type/scene-1"
 @import "kinetic-type/scene-2"
+@import "kinetic-type/scene-3"
 
 /* Variables
 -----------------------------------------------------------------------------*/
@@ -74,7 +75,7 @@ body
 
 /* Basic layout stuff
 -----------------------------------------------------------------------------*/ 
-body > header
+header
   padding 50px 0px 0px 0px
   border-bottom 0.5em light-shadow solid
   background rgba(246, 246, 246, 0.75) //#F6F6F6
@@ -127,3 +128,8 @@ body > header
 #map_canvas
   width 100%
   height 100%
+  z-index 0
+
+#kinetic_type
+  z-index 1000
+  position absolute
