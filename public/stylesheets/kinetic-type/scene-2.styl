@@ -37,7 +37,12 @@ div#scene-2
     &.action
       top 50px
       transition all 0.5s ease-out
-        
+    &.cut
+      left 900px
+      transition all 0.25s ease-out
+    &.cut:after
+      content "n"
+      
   span.act-4, span.act-5, span.act-6
     font-size 175px
     color #A00
@@ -50,3 +55,11 @@ div#scene-2
       top 2500px
       transition all 0.5s ease-in
                 
+  span.act-7
+    font-size 200px
+    left 525px
+    top 50px
+    opacity 0
+    &.action
+      opacity 1
+      transition all 0.5s ease-out

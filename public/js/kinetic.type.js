@@ -22,6 +22,8 @@ $(window).ready(function(){
 	direct('#scene-2 > .act-5', 'action', 6250);
 	direct('#scene-2 > .act-5', 'cut', 7250);
 	direct('#scene-2 > .act-6', 'action', 7250);
+	direct('#scene-2 > .act-3', 'cut', 7250);
+	direct('#scene-2 > .act-7', 'action', 7250);
 	direct('#scene-2', 'cut', 8250);
 });
 
