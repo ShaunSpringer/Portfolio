@@ -49,16 +49,9 @@ app.get('/', function(req, res){
 });
 
 //route our about section
-app.get('/about/', function(req, res){
-	res.render('partials/about', {
-		title: 'Shaun Springer // About Me'
-	});
-});
-
-//route our resume section
-app.get('/resume/', function(req, res){
-	res.render('partials/resume', {
-		title: 'Shaun Springer // My Resume'
+app.get('/play/', function(req, res){
+	res.render('partials/play', {
+		title: 'Shaun Springer // Portfolio'
 	});
 });
 

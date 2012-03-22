@@ -1,0 +1,52 @@
+div#scene-2
+  padding 0
+  margin 0
+  opacity 0
+  
+  span  
+    position absolute
+    display block
+   
+  &.action
+    opacity 1
+  &.cut
+    position absolute
+    left 10000px
+    transition all 0.5s ease-in
+    
+  span.act-1
+    font-size 200px
+    left -1000px
+    top 50px
+    &.action
+      left 100px
+      transition all 0.5s ease-out
+ 
+  span.act-2
+    font-size 200px
+    left 200px
+    top -1000px
+    &.action
+      top 50px
+      transition all 0.5s ease-out
+        
+  span.act-3
+    font-size 200px
+    left 525px
+    top 2000px
+    &.action
+      top 50px
+      transition all 0.5s ease-out
+        
+  span.act-4, span.act-5, span.act-6
+    font-size 175px
+    color #A00
+    left 100px
+    top -1000px
+    &.action
+      top 250px
+      transition all 0.5s ease-out
+    &.cut
+      top 2500px
+      transition all 0.5s ease-in
+                

@@ -3,6 +3,34 @@ body:before,body:after{content:"";display:table}
 body:after{clear:both}
 .ribbon{background-color:#a00;overflow:hidden;-webkit-box-shadow:0 0 1em #888;-moz-box-shadow:0 0 1em #888;box-shadow:0 0 1em #888;z-index:1000;position:absolute;width:100%}
 .ribbon a{border-top:1px solid #faa;border-bottom:1px solid #faa;color:#fff;display:block;font:bold 1.5em 'Helvetiva Neue',Helvetica,Arial,sans-serif;margin:.05em 0 .075em 0;padding:.5em 3.5em;text-align:center;text-decoration:none;text-shadow:0 0 .5em #444}
+div#kinetic_type{position:relative;top:15em;font-family:"Helvetica"}
+div#scene-1{padding:0;margin:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+div#scene-1 span{position:absolute;display:block}
+div#scene-1.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+div#scene-1.cut{position:absolute;left:-10000px;-webkit-transition:all .5s ease-in;-moz-transition:all .5s ease-in;transition:all .5s ease-in}
+div#scene-1 span.act-1{font-size:150px;left:-1000px;top:50px;}
+div#scene-1 span.act-1.action{left:100px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
+div#scene-1 span.act-1.cut{left:0;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-1 span.act-2{font-size:50px;left:-1000px;top:200px;}
+div#scene-1 span.act-2.action{left:100px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
+div#scene-1 span.act-2.cut{top:160px;left:120px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-1 span.act-3{font-size:325px;left:325px;top:-1000px;}
+div#scene-1 span.act-3.action{top:-50px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
+div#scene-1 span.act-4{font-size:260px;left:100px;top:2000px;}
+div#scene-1 span.act-4.action{top:250px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;}
+div#scene-2{padding:0;margin:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+div#scene-2 span{position:absolute;display:block}
+div#scene-2.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+div#scene-2.cut{position:absolute;left:10000px;-webkit-transition:all .5s ease-in;-moz-transition:all .5s ease-in;transition:all .5s ease-in}
+div#scene-2 span.act-1{font-size:200px;left:-1000px;top:50px;}
+div#scene-2 span.act-1.action{left:100px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-2 span.act-2{font-size:200px;left:200px;top:-1000px;}
+div#scene-2 span.act-2.action{top:50px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-2 span.act-3{font-size:200px;left:525px;top:2000px;}
+div#scene-2 span.act-3.action{top:50px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-2 span.act-4,div#scene-2 span.act-5,div#scene-2 span.act-6{font-size:175px;color:#a00;left:100px;top:-1000px;}
+div#scene-2 span.act-4.action,div#scene-2 span.act-5.action,div#scene-2 span.act-6.action{top:250px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-2 span.act-4.cut,div#scene-2 span.act-5.cut,div#scene-2 span.act-6.cut{top:2500px;}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
 article,aside,dialog,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif;text-align:center}
