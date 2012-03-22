@@ -72,9 +72,20 @@ div#scene-3
       color black
       text-shadow 0 0 0 black
       transition all 1.0s ease-in      
-  
+    &.cut
+      font-size 1000px
+      top -400px
+      left 0px
+      transition all 0.5s ease      
+    &.fly-out
+      left -3500px
+      transition all 1.0s ease
+      
   span.act-1, span.act-2, span.act-3, span.act-4, span.act-5  
     &.cut
       color transparent
       text-shadow 0 0 20px rgba(0,0,0,0.5)
       transition all 0.5s ease-out
+    &.fly-out
+      top -1000px
+      transition all 0.5s ease-in
