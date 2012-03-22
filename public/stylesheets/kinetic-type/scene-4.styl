@@ -1,0 +1,76 @@
+div#scene-4
+  padding 0
+  margin 0
+  opacity 0
+  
+  span  
+    position absolute
+    display block
+   
+  &.action
+    opacity 1    
+  &.cut    
+    opacity 0
+    transition all 0.5s ease-in
+     
+  span.act-1
+    font-size 300px
+    top 0px
+    left 650px
+    &.cut
+      opacity 0
+      transition all 0.5s ease
+    
+  span.act-2
+    font-family 'WebSymbolsRegular', cursive;
+    font-size 250px
+    color #A00
+    left 775px
+    top 25px
+    &.action
+      animation smallToBig 750ms alternate infinite ease;
+    &.cut
+      font-size 2750px
+      top -1500px
+      left -500px
+      opacity 0
+      transition all 1.25s ease
+      animation none
+     
+  span.act-3
+    left 25px
+        
+  span.act-4
+    left 450px
+        
+  span.act-5
+    left 425px
+        
+  span.act-6
+    left 350px
+        
+  span.act-7
+    left 525px
+  
+  span.act-8
+    left 525px
+        
+  span.act-9
+    left 375px
+        
+  span.act-3, span.act-4, span.act-5, span.act-6, span.act-7, span.act-8 , span.act-9
+    font-size 300px
+    top 3500px
+    &.action
+      top 300px
+      transition all 0.5s ease-out
+    &.cut
+      opacity 0
+      transition all 0.75s ease 0.5s
+      
+     
+@keyframes smallToBig
+  from
+    transform scale(0.75)
+  to
+    transform scale(1)
