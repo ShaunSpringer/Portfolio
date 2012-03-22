@@ -33,7 +33,7 @@ app.configure('production', function(){
 // Only listen on $ node app.js
 var hasParent = module.parent;
 if (!hasParent) {
-  app.listen(80);
+  app.listen(12118);
   console.log("Express server listening on port %d", app.address().port); 
 }
 

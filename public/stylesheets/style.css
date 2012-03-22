@@ -1,7 +1,7 @@
 body{width:100%;*zoom:1;}
 body:before,body:after{content:"";display:table}
 body:after{clear:both}
-.ribbon{background-color:#a00;overflow:hidden;-webkit-box-shadow:0 0 1em #888;-moz-box-shadow:0 0 1em #888;box-shadow:0 0 1em #888;z-index:1000;position:absolute;width:100%}
+.ribbon{background-color:#a00;overflow:hidden;-webkit-box-shadow:0 0 1em #888;-moz-box-shadow:0 0 1em #888;box-shadow:0 0 1em #888;z-index:1002;position:absolute;width:100%}
 .ribbon a{border-top:1px solid #faa;border-bottom:1px solid #faa;color:#fff;display:block;font:bold 1.5em 'Helvetiva Neue',Helvetica,Arial,sans-serif;margin:.05em 0 .075em 0;padding:.5em 3.5em;text-align:center;text-decoration:none;text-shadow:0 0 .5em #444}
 div#kinetic_type{position:relative;top:15em;font-family:"Helvetica"}
 div#scene-1{padding:0;margin:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
@@ -66,7 +66,7 @@ div#scene-4.cut{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity
 div#scene-4 span.act-1{font-size:300px;top:0;left:650px;}
 div#scene-4 span.act-1.cut{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
 div#scene-4 span.act-2{font-family:'WebSymbolsRegular',cursive;font-size:250px;color:#a00;left:775px;top:25px;}
-div#scene-4 span.act-2.action{-webkit-animation:smallToBig 750ms alternate infinite ease;-moz-animation:smallToBig 750ms alternate infinite ease;animation:smallToBig 750ms alternate infinite ease}
+div#scene-4 span.act-2.action{-webkit-animation:smallToBig 500ms alternate infinite ease;-moz-animation:smallToBig 500ms alternate infinite ease;animation:smallToBig 500ms alternate infinite ease}
 div#scene-4 span.act-2.cut{font-size:2750px;top:-1500px;left:-500px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all 1.25s ease;-moz-transition:all 1.25s ease;transition:all 1.25s ease;-webkit-animation:none;-moz-animation:none;animation:none}
 div#scene-4 span.act-3{left:25px}
 div#scene-4 span.act-4{left:450px}
@@ -74,10 +74,11 @@ div#scene-4 span.act-5{left:450px}
 div#scene-4 span.act-6{left:375px}
 div#scene-4 span.act-7{left:550px}
 div#scene-4 span.act-8{left:525px}
-div#scene-4 span.act-9{left:400px}
-div#scene-4 span.act-3,div#scene-4 span.act-4,div#scene-4 span.act-5,div#scene-4 span.act-6,div#scene-4 span.act-7,div#scene-4 span.act-8,div#scene-4 span.act-9{font-size:300px;top:3500px;}
-div#scene-4 span.act-3.action,div#scene-4 span.act-4.action,div#scene-4 span.act-5.action,div#scene-4 span.act-6.action,div#scene-4 span.act-7.action,div#scene-4 span.act-8.action,div#scene-4 span.act-9.action{top:300px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
-div#scene-4 span.act-3.cut,div#scene-4 span.act-4.cut,div#scene-4 span.act-5.cut,div#scene-4 span.act-6.cut,div#scene-4 span.act-7.cut,div#scene-4 span.act-8.cut,div#scene-4 span.act-9.cut{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all .75s ease .5s;-moz-transition:all .75s ease .5s;transition:all .75s ease .5s}
+div#scene-4 span.act-9{left:575px}
+div#scene-4 span.act-10{left:400px}
+div#scene-4 span.act-3,div#scene-4 span.act-4,div#scene-4 span.act-5,div#scene-4 span.act-6,div#scene-4 span.act-7,div#scene-4 span.act-8,div#scene-4 span.act-9,div#scene-4 span.act-10{font-size:300px;top:3500px;}
+div#scene-4 span.act-3.action,div#scene-4 span.act-4.action,div#scene-4 span.act-5.action,div#scene-4 span.act-6.action,div#scene-4 span.act-7.action,div#scene-4 span.act-8.action,div#scene-4 span.act-9.action,div#scene-4 span.act-10.action{top:300px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-4 span.act-3.cut,div#scene-4 span.act-4.cut,div#scene-4 span.act-5.cut,div#scene-4 span.act-6.cut,div#scene-4 span.act-7.cut,div#scene-4 span.act-8.cut,div#scene-4 span.act-9.cut,div#scene-4 span.act-10.cut{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all .75s ease .5s;-moz-transition:all .75s ease .5s;transition:all .75s ease .5s}
 @-moz-keyframes smallToBig{0%{-webkit-transform:scale(.75);-moz-transform:scale(.75);transform:scale(.75)}
 100%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}
 }@-webkit-keyframes smallToBig{0%{-webkit-transform:scale(.75);-moz-transform:scale(.75);transform:scale(.75)}
@@ -103,7 +104,7 @@ a{text-decoration:underline;color:#33c;outline:none}
 a:hover{text-decoration:none}
 code,samp,dfn,kbd,var,acronym,ins,del,abbr{speak:spell-out}
 acronym{speak:normal}
-header{padding:50px 0 0 0;border-bottom:.5em #aaa solid;background:rgba(246,246,246,0.75);position:absolute;width:100%;z-index:999;-webkit-box-shadow:0 .25em .05em rgba(0,0,0,0.15);-moz-box-shadow:0 .25em .05em rgba(0,0,0,0.15);box-shadow:0 .25em .05em rgba(0,0,0,0.15);border-bottom-right-radius:20%;border-bottom-left-radius:20%;}
+header{padding:50px 0 0 0;border-bottom:.5em #aaa solid;background:rgba(246,246,246,0.75);position:absolute;width:100%;z-index:1001;-webkit-box-shadow:0 .25em .05em rgba(0,0,0,0.15);-moz-box-shadow:0 .25em .05em rgba(0,0,0,0.15);box-shadow:0 .25em .05em rgba(0,0,0,0.15);border-bottom-right-radius:20%;border-bottom-left-radius:20%;}
 header h1{font:8em 'Lobster';color:#222;text-shadow:#000 .01em .02em .03em;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.55)),to(#000))}
 header h2{margin-top:-1.8em;padding-left:1.25em;font:5em 'Windsong';color:#888;text-shadow:#fff .01em .02em .01em}
 header navigation{padding:0 2em;position:relative;top:-1em;font:2.5em "Helvetica Neue";-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.55)),to(#000));font-weight:bold;cursor:pointer;color:#a00;text-decoration:none;text-shadow:0 .05em .05em #aaa;-webkit-transition-property:color,text-shadow,top;-moz-transition-property:color,text-shadow,top;transition-property:color,text-shadow,top;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;transition-timing-function:ease-out;}

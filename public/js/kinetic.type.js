@@ -69,9 +69,11 @@ $(window).ready(function(){
 	direct('#scene-4 > .act-8', 'cut', 17500);
 	direct('#scene-4 > .act-9', 'action', 18000);
 	direct('#scene-4 > .act-9', 'cut', 18500);
-	direct('#scene-4 > .act-1', 'cut', 19250);
-	direct('#scene-4 > .act-2', 'cut', 19250);
-	direct('#scene-4', 'cut', 20500);
+	direct('#scene-4 > .act-10', 'action', 19000);
+	direct('#scene-4 > .act-10', 'cut', 19500);
+	direct('#scene-4 > .act-1', 'cut', 20250);
+	direct('#scene-4 > .act-2', 'cut', 20750);
+	direct('#scene-4', 'cut', 21500);
 });
 
 function direct(what, type, delay)
