@@ -95,17 +95,18 @@ $(window).ready(function(){
 	direct('#scene-5 > .act-7', 'action', 24000);
 	direct('#scene-5 > .act-8', 'action', 24500);
 	direct('#scene-5 > .act-9', 'action', 25000);
-	direct('#scene-5 > .act-10', 'action', 25500);
-	direct('#scene-5 > .act-1', 'action', 26500);
-	direct('#scene-5 > .act-2', 'action', 26500);
-	direct('#scene-5 > .act-3', 'action', 26500);
-	direct('#scene-5 > .act-4', 'action', 26500);
-	direct('#scene-5 > .act-5', 'action', 26500);
-	direct('#scene-5 > .act-6', 'action', 26500);
-	direct('#scene-5 > .act-7', 'action', 26500);
-	direct('#scene-5 > .act-8', 'action', 26500);
-	direct('#scene-5 > .act-9', 'action', 26500);
-	direct('#scene-5 > .act-10', 'action', 26500);
+	direct('#scene-5 > .act-10', 'cut', 25500);
+	direct('#scene-5 > .act-1', 'cut', 26500);
+	direct('#scene-5 > .act-2', 'cut', 26500);
+	direct('#scene-5 > .act-3', 'cut', 26500);
+	direct('#scene-5 > .act-4', 'cut', 26500);
+	direct('#scene-5 > .act-5', 'cut', 26500);
+	direct('#scene-5 > .act-6', 'cut', 26500);
+	direct('#scene-5 > .act-7', 'cut', 26500);
+	direct('#scene-5 > .act-8', 'cut', 26500);
+	direct('#scene-5 > .act-9', 'cut', 26500);
+	direct('#scene-5 > .act-10', 'cut', 26500);
+	direct('#scene-5', 'cut', 27500);
 });
 
 function direct(what, type, delay)
