@@ -8,15 +8,15 @@ div#scene-1{padding:0;margin:0;opacity:0;filter:progid:DXImageTransform.Microsof
 div#scene-1 span{position:absolute;display:block}
 div#scene-1.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
 div#scene-1.cut{position:absolute;left:-10000px;-webkit-transition:all .5s ease-in;-moz-transition:all .5s ease-in;transition:all .5s ease-in}
-div#scene-1 span.act-1{font-size:150px;left:-1000px;top:50px;}
+div#scene-1 span.act-1{font-size:125px;left:-1000px;top:50px;}
 div#scene-1 span.act-1.action{left:100px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
-div#scene-1 span.act-1.cut{left:0;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
+div#scene-1 span.act-1.cut{left:25px;top:100px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 div#scene-1 span.act-2{font-size:50px;left:-1000px;top:200px;}
 div#scene-1 span.act-2.action{left:100px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
 div#scene-1 span.act-2.cut{top:160px;left:120px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 div#scene-1 span.act-3{color:#00a0b0;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.55)),to(#000))}
 div#scene-1 span.act-3{font-size:325px;left:325px;top:-1000px;}
-div#scene-1 span.act-3.action{top:-50px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
+div#scene-1 span.act-3.action{top:-30px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}
 div#scene-1 span.act-4{font-size:260px;left:100px;top:2000px;}
 div#scene-1 span.act-4.action{top:250px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out;}
 div#scene-2{padding:0;margin:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
@@ -51,9 +51,9 @@ div#scene-3 span.act-3.action{opacity:1;filter:progid:DXImageTransform.Microsoft
 div#scene-3 span.act-4{left:10000px;font-size:150px;}
 div#scene-3 span.act-4.action-1{left:825px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 div#scene-3 span.act-4.action-2{left:1025px;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
-div#scene-3 span.act-5{left:600px;top:200px;font-size:150px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+div#scene-3 span.act-5{left:600px;top:150px;font-size:150px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
 div#scene-3 span.act-5.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
-div#scene-3 span.act-6{left:380px;top:350px;font-size:250px;color:transparent;text-shadow:0 0 20px rgba(0,0,0,0.50);opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+div#scene-3 span.act-6{left:380px;top:250px;font-size:250px;color:transparent;text-shadow:0 0 20px rgba(0,0,0,0.50);opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
 div#scene-3 span.act-6.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);color:#000;text-shadow:0 0 0 #000;-webkit-transition:all 1s ease-in;-moz-transition:all 1s ease-in;transition:all 1s ease-in}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
 article,aside,dialog,figure,footer,header,hgroup,menu,nav,section{display:block}
