@@ -89,7 +89,36 @@ div#scene-4 span.act-3.cut,div#scene-4 span.act-4.cut,div#scene-4 span.act-5.cut
 100%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}
 }@keyframes smallToBig{0%{-webkit-transform:scale(.75);-moz-transform:scale(.75);transform:scale(.75)}
 100%{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1)}
-}html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
+}div#scene-5{padding:0;margin:0;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+div#scene-5 span{position:absolute;display:block}
+div#scene-5.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+div#scene-5.cut{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:all .5s ease-in;-moz-transition:all .5s ease-in;transition:all .5s ease-in}
+div#scene-5 span.act-1{font-size:150px;top:100px;left:-1000px;}
+div#scene-5 span.act-1.action-1{left:100px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-1.action-2{font-size:75px;top:500px;left:-75px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-2{font-size:150px;top:-1000px;left:775px;}
+div#scene-5 span.act-2.action-1{top:100px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-2.action-2{font-size:75px;top:250px;left:0;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-3{font-size:150px;top:10000px;left:1175px;}
+div#scene-5 span.act-3.action-1{top:100px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-3.action-2{font-size:75px;top:140px;left:65px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-4{font-size:150px;top:100px;left:3000px;}
+div#scene-5 span.act-4.action-1{left:1300px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-4.action-2{font-size:75px;top:50px;left:20px;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-1.cut,div#scene-5 span.act-2.cut,div#scene-5 span.act-3.cut,div#scene-5 span.act-4.cut{left:-1000px;-webkit-transition:all .5 ease-out;-moz-transition:all .5 ease-out;transition:all .5 ease-out}
+div#scene-5 span.act-5,div#scene-5 span.act-6,div#scene-5 span.act-7,div#scene-5 span.act-8,div#scene-5 span.act-9,div#scene-5 span.act-10{font-size:100px;color:#a00;text-shadow:#000 .01em .02em .03em;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.55)),to(#000));}
+div#scene-5 span.act-5.cut,div#scene-5 span.act-6.cut,div#scene-5 span.act-7.cut,div#scene-5 span.act-8.cut,div#scene-5 span.act-9.cut,div#scene-5 span.act-10.cut{left:3000px;-webkit-transition:all .5 ease-out;-moz-transition:all .5 ease-out;transition:all .5 ease-out}
+div#scene-5 span.act-5{top:-1000px;left:150px;}
+div#scene-5 span.act-5.action{top:50px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-6{top:-1000px;left:150px;}
+div#scene-5 span.act-6.action{top:175px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-7{top:-1000px;left:150px;}
+div#scene-5 span.act-7.action{top:300px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-8{top:-1000px;left:150px;}
+div#scene-5 span.act-8.action{top:425px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+div#scene-5 span.act-9{top:-1000px;left:150px;}
+div#scene-5 span.act-9.action{top:550px;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
 article,aside,dialog,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif;text-align:center}
 h1{color:#222;font:4em 'Helvetica Neue';line-height:.9em;margin-bottom:.9em}

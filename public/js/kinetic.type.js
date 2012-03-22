@@ -67,13 +67,45 @@ $(window).ready(function(){
 	direct('#scene-4 > .act-7', 'cut', 16500);
 	direct('#scene-4 > .act-8', 'action', 17000);
 	direct('#scene-4 > .act-8', 'cut', 17500);
-	direct('#scene-4 > .act-9', 'action', 18000);
+	direct('#scene-4 > .act-10', 'action', 18000);
+	direct('#scene-4 > .act-10', 'cut', 18500);
+	direct('#scene-4 > .act-1', 'cut', 19250);
+	direct('#scene-4 > .act-2', 'cut', 19750);
+	direct('#scene-4', 'cut', 20500);
+	/*direct('#scene-4 > .act-9', 'action', 18000);
 	direct('#scene-4 > .act-9', 'cut', 18500);
 	direct('#scene-4 > .act-10', 'action', 19000);
 	direct('#scene-4 > .act-10', 'cut', 19500);
 	direct('#scene-4 > .act-1', 'cut', 20250);
 	direct('#scene-4 > .act-2', 'cut', 20750);
-	direct('#scene-4', 'cut', 21500);
+	direct('#scene-4', 'cut', 21500);*/
+	
+	//scene 5
+	direct('#scene-5', 'action', 20500);	
+	direct('#scene-5 > .act-1', 'action-1', 20500);
+	direct('#scene-5 > .act-2', 'action-1', 20500);
+	direct('#scene-5 > .act-3', 'action-1', 20500);
+	direct('#scene-5 > .act-4', 'action-1', 20500);
+	direct('#scene-5 > .act-1', 'action-2', 22000);
+	direct('#scene-5 > .act-2', 'action-2', 22000);
+	direct('#scene-5 > .act-3', 'action-2', 22000);
+	direct('#scene-5 > .act-4', 'action-2', 22000);
+	direct('#scene-5 > .act-5', 'action', 23000);
+	direct('#scene-5 > .act-6', 'action', 23500);
+	direct('#scene-5 > .act-7', 'action', 24000);
+	direct('#scene-5 > .act-8', 'action', 24500);
+	direct('#scene-5 > .act-9', 'action', 25000);
+	direct('#scene-5 > .act-10', 'action', 25500);
+	direct('#scene-5 > .act-1', 'action', 26500);
+	direct('#scene-5 > .act-2', 'action', 26500);
+	direct('#scene-5 > .act-3', 'action', 26500);
+	direct('#scene-5 > .act-4', 'action', 26500);
+	direct('#scene-5 > .act-5', 'action', 26500);
+	direct('#scene-5 > .act-6', 'action', 26500);
+	direct('#scene-5 > .act-7', 'action', 26500);
+	direct('#scene-5 > .act-8', 'action', 26500);
+	direct('#scene-5 > .act-9', 'action', 26500);
+	direct('#scene-5 > .act-10', 'action', 26500);
 });
 
 function direct(what, type, delay)

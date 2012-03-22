@@ -1,0 +1,120 @@
+div#scene-5
+  padding 0
+  margin 0
+  opacity 0
+  
+  span  
+    position absolute
+    display block
+   
+  &.action
+    opacity 1    
+  &.cut    
+    opacity 0
+    transition all 0.5s ease-in
+     
+  span.act-1
+    font-size 150px
+    top 100px
+    left -1000px
+    &.action-1
+      left 100px
+      transition all 0.5s ease
+    &.action-2
+      font-size 75px
+      top 500px
+      left -75px
+      transform rotate(-90deg)
+      transition all 0.5s ease
+  
+  span.act-2
+    font-size 150px
+    top -1000px
+    left 775px
+    &.action-1
+      top 100px
+      transition all 0.5s ease
+    &.action-2
+      font-size 75px
+      top 250px
+      left 0px
+      transform rotate(-90deg)
+      transition all 0.5s ease
+    
+  span.act-3
+    font-size 150px
+    top 10000px
+    left 1175px
+    &.action-1
+      top 100px
+      transition all 0.5s ease
+    &.action-2
+      font-size 75px
+      top 140px
+      left 65px
+      transform rotate(-90deg)
+      transition all 0.5s ease
+    
+  span.act-4
+    font-size 150px
+    top 100px
+    left 3000px
+    &.action-1
+      left 1300px
+      transition all 0.5s ease
+    &.action-2
+      font-size 75px
+      top 50px
+      left 20px
+      transform rotate(-90deg)
+      transition all 0.5s ease
+    
+  span.act-1,span.act-2,span.act-3,span.act-4
+    &.cut
+      left -1000px
+      transition all 0.5 ease-out
+  
+  span.act-5,span.act-6,span.act-7,span.act-8,span.act-9,span.act-10
+    font-size 100px
+    color #A00
+    text-shadow #000 0.010em 0.020em 0.030em
+    -webkit-mask-image -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.55)), to(rgba(0,0,0,1)))
+    &.cut
+      left 3000px
+      transition all 0.5 ease-out
+  
+  span.act-5
+    top -1000px
+    left 150px
+    &.action
+      top 50px
+      transition all 0.5s ease
+
+  span.act-6
+    top -1000px
+    left 150px
+    &.action
+      top 175px
+      transition all 0.5s ease
+
+  span.act-7
+    top -1000px
+    left 150px
+    &.action
+      top 300px
+      transition all 0.5s ease
+
+  span.act-8
+    top -1000px
+    left 150px
+    &.action
+      top 425px
+      transition all 0.5s ease
+
+  span.act-9
+    top -1000px
+    left 150px
+    &.action
+      top 550px
+      transition all 0.5s ease
+    
