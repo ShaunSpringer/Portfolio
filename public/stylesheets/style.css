@@ -55,6 +55,7 @@ div#scene-3 span.act-5{left:600px;top:150px;font-size:150px;opacity:0;filter:pro
 div#scene-3 span.act-5.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 div#scene-3 span.act-6{left:380px;top:250px;font-size:250px;color:transparent;text-shadow:0 0 20px rgba(0,0,0,0.50);opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
 div#scene-3 span.act-6.action{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);color:#000;text-shadow:0 0 0 #000;-webkit-transition:all 1s ease-in;-moz-transition:all 1s ease-in;transition:all 1s ease-in}
+div#scene-3 span.act-1.cut,div#scene-3 span.act-2.cut,div#scene-3 span.act-3.cut,div#scene-3 span.act-4.cut,div#scene-3 span.act-5.cut{color:transparent;text-shadow:0 0 20px rgba(0,0,0,0.50);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strike,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline}
 article,aside,dialog,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{font:62.5%/1.5 Helvetica,Arial,"Lucida Grande","Lucida Sans",Tahoma,Verdana,sans-serif;text-align:center}

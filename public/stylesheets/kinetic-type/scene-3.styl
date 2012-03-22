@@ -12,7 +12,7 @@ div#scene-3
   &.cut    
     opacity 0
     transition all 0.5s ease-in
-          
+     
   span.act-1
     left -1000px
     font-size 150px
@@ -22,7 +22,7 @@ div#scene-3
     &.action-2
       left 250px
       transition all 0.5s ease-out
-      
+    
   span.act-2
     left -1000px
     font-size 150px
@@ -71,4 +71,10 @@ div#scene-3
       opacity 1
       color black
       text-shadow 0 0 0 black
-      transition all 1.0s ease-in
+      transition all 1.0s ease-in      
+  
+  span.act-1, span.act-2, span.act-3, span.act-4, span.act-5  
+    &.cut
+      color transparent
+      text-shadow 0 0 20px rgba(0,0,0,0.5)
+      transition all 0.5s ease-out

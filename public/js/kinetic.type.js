@@ -37,6 +37,12 @@ $(window).ready(function(){
 	direct('#scene-3 > .act-4', 'action-2', 9000);
 	direct('#scene-3 > .act-5', 'action', 9250);
 	direct('#scene-3 > .act-6', 'action', 9500);
+	direct('#scene-3 > .act-1', 'cut', 10000);
+	direct('#scene-3 > .act-2', 'cut', 10000);
+	direct('#scene-3 > .act-3', 'cut', 10000);
+	direct('#scene-3 > .act-4', 'cut', 10000);
+	direct('#scene-3 > .act-5', 'cut', 10000);
+	direct('#scene-3 > .act-6', 'cut', 10000);
 });
 
 function direct(what, type, delay)
