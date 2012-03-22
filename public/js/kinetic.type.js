@@ -42,14 +42,14 @@ $(window).ready(function(){
 	direct('#scene-3 > .act-3', 'cut', 10000);
 	direct('#scene-3 > .act-4', 'cut', 10000);
 	direct('#scene-3 > .act-5', 'cut', 10000);
-	direct('#scene-3 > .act-6', 'cut', 10000);	
-	direct('#scene-3 > .act-1', 'fly-out', 10750);
-	direct('#scene-3 > .act-2', 'fly-out', 10750);
-	direct('#scene-3 > .act-3', 'fly-out', 10750);
-	direct('#scene-3 > .act-4', 'fly-out', 10750);
-	direct('#scene-3 > .act-5', 'fly-out', 10750);
-	direct('#scene-3 > .act-6', 'cut', 10750);
-	direct('#scene-3 > .act-6', 'fly-out', 11000);
+	direct('#scene-3 > .act-1', 'fly-out', 10250);
+	direct('#scene-3 > .act-2', 'fly-out', 10250);
+	direct('#scene-3 > .act-3', 'fly-out', 10250);
+	direct('#scene-3 > .act-4', 'fly-out', 10250);
+	direct('#scene-3 > .act-5', 'fly-out', 10250);
+  direct('#scene-3 > .act-6', 'cut', 11000);
+	direct('#scene-3 > .act-6', 'fly-out', 11500);
+	direct('#scene-3', 'cut', 12500);
 });
 
 function direct(what, type, delay)
